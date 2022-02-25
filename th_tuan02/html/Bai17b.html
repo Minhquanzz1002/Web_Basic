@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17b</title>
+    <style>
+        body{
+            margin: 10px auto;
+            padding: 0 20px;
+            width: 60%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <p></p>
+        <form>
+            <p>
+                <label for="browser">Browser: </label>
+                <input list="list_browser" id="browser">
+                <datalist id="list_browser">
+                    <option value="Chrome">Chrome</option>
+                    <option value="CocCoc">CocCoc</option>
+                    <option value="Other">Other</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="username">Username: </label>
+                <input type="text" id="username">
+            </p>
+            <p>
+                <label for="encryption">Encryption: </label>
+                <select id="encryption">
+                    <option value="2048">2048 (High Grade)</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p>
+                <label for="range">0</label>
+                <input type="range" min="0" max="100" step="1" value="70" id="range">
+                <label for="range">100</label>
+            </p>
+            <p>
+                <input type="text" value="50">
+            </p>
+            <p>
+                <label for="birthday">Birthday: </label>
+                <input type="text" value="mm/dd/yyyy" id="birthday">
+            </p>
+            <p>
+                <label for="select_color">Select your favorite color: </label>
+                <input type="color" id="select_color">
+            </p>
+            <p>
+                <label for="month-year">Birthday (Month and Year): </label>
+                <input type="month" id="month-year">
+            </p>
+            <p>
+                <label for="select_week">Select a week: </label>
+                <input type="week" id="select_week">
+            </p>
+            <p>
+                <label for="time">Select a time: </label>
+                <input type="time" id="time">
+            </p>
+            <p>
+                <label for="datetime">Birthday (date and time): </label>
+                <input type="datetime" id="datetime">
+            </p>
+            <p>
+                <label for="email">E-mail: </label>
+                <input type="email" value="" id="email">
+            </p>
+            <p>
+                <label for="gg_search">Search Google: </label>
+                <input type="search" value="" id="gg_search">
+            </p>
+            <p>
+                <label for="telephone">Telephone: </label>
+                <input type="tel" value="" id="telephone">
+            </p>
+            <p>
+                <label for="homepage">Add your homepage: </label>
+                <input type="url" value="" id="homepage">
+            </p>
+            <input type="submit" value="Submit">
+            <p><B>Note: </B>The datalist taag is not supported in Safari or IE9(and earlier).</p>
+        </form>
+</body>
+</html>

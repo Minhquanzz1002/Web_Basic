@@ -1,0 +1,42 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    height: 797px;
+    background-color: #FFE599;
+    border: 1px solid black;
+    text-align: center;
+}
+
+header, menu {
+    border-bottom: 1px solid black;
+}
+
+header, menu, footer {
+    width: 100%;
+    height: 100px;
+}
+
+nav, section {
+    height: 500px;
+    width: 200px;
+}
+
+nav {
+    border-right: 1px solid black;
+    float: left;
+}
+
+section {
+    border-left: 1px solid black;
+    float: right;
+}
+
+footer {
+    border-top: 1px solid black;
+    clear: both;
+}

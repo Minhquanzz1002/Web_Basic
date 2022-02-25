@@ -1,0 +1,174 @@
+
+.container {
+    height: auto;
+    width: 1000px;
+    padding: 0;
+    margin: 0;
+}
+
+.bai11 {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    background-color: green;
+    color: #fff;
+}
+
+div.gallery {
+    margin: 5px;
+    float: left;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+div.gallery:hover {
+    border: 1px solid black;
+}
+
+div.desc_gallery {
+    height: 20px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.bai14 {
+    text-align: justify;
+    width: 300px;
+    height: 180px;
+    color: white;
+    margin: 50px 50px;
+    background-color: #6FAC21;
+    border-radius: 10px;
+    border-left: double;
+    border-top: double;
+    border-bottom: dashed;
+    border-right: dashed;
+    border-color: red;
+    transition: all 1s linear;
+    opacity: 0.8;
+}
+
+.bai14:hover {
+    transform: scale(1.5) rotate(360deg);
+    /*scale: ti le, rotate: quay*/
+    background-color: #7c9759;
+    opacity: 1;
+    /*Do mo duc*/
+}
+
+input[type=text] {
+    width: 100px;
+    transition: width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 250px;
+    background-color: #6FAC21;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu_bai16 li a {
+    display: block;
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+    background-color: #0D90DF;
+}
+
+#menu_bai16 li {
+    width: 110px;
+    padding: 5px;
+    margin: 12px;
+    background-color: #0d90df;
+    border: 3px dashed #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 4px #0d90df, 4px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#menu_bai16 li:hover>a {
+    background: white;
+    color: #0D90DF;
+}
+
+#menu_bai16 li:hover {
+    background: white;
+    border: 3px dashed #0d90df;
+    box-shadow: 0 0 0 4px white, 4px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+#menu_bai17 ul {
+    list-style-type: none;
+    background: #993738;
+    text-align: center;
+    color: white;
+
+}
+
+#menu_bai17 ul li {
+    display: inline-table;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#menu_bai17 ul li a {
+    color: white;
+    text-decoration: none;
+    /*Xoa gach chan the a*/
+    display: block;
+}
+
+#menu_bai17 ul li a:hover {
+    background: white;
+    color: #993738;
+}
+
+#menu_bai18 ul {
+    list-style-type: none;
+    background: pink;
+    text-align: center;
+}
+
+#menu_bai18 ul li {
+    display: inline-table;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    /*Chu nam giua*/
+    position: relative;
+}
+
+#menu_bai18 ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#menu_bai18 ul li a:hover {
+    background: rgb(224, 95, 116);
+}
+
+#menu_bai18 ul li>.sub_menu {
+    position: absolute;
+    display: none;
+}
+
+#menu_bai18 ul li:hover .sub_menu {
+    display: block;
+}
+
+.sub_menu li a {
+    border-top: 1px solid white;
+}
+
+

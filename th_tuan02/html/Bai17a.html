@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17a</title>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        form {
+            width: 60%;
+            margin: 10px auto;
+            border: 1px solid black;
+            border-radius: 15px;
+            background: #FFD078;
+            padding: 0 20px 20px 20px;
+            font-size: 20px;
+        }
+        div{
+            margin: 0 auto;
+            padding: 0 35% 0 35%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form>
+        <h3 style="text-align: center;font-size: 30px;">Survey Form</h3>
+        <p>If you are interested in purchasing one or more of our products, before ordering please complete
+            some or all of the following survey for our marketing department. Answering any question is
+            optional, and all information will be kept strictly confidential. Thank you very much for your timel
+        </p>
+        <ol type="1">
+            <li><label for="name">What is your name</label></li>
+            <input type="text" id="name">
+            <li><label>What is your date of birth?</label></li>
+            <label for="month">Month</label>
+            <select id="month">
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            <label for="date">Date</label>
+            <select id="date">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <label for="year">Year:</label>
+            <select id="year">
+                <option value="">2018</option>
+                <option value="">2019</option>
+                <option value="">2020</option>
+                <option value="">2021</option>
+                <option value="">2022</option>
+            </select>
+            <li>What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</li>
+            <textarea cols="40" rows="4">
+Number/P>O. Box/Route:
+Street/Avenue/Road
+City:
+State/Zip:
+        </textarea><br>
+            <li>What is your email address?</li>
+            <input type="email"><br>
+            <li>Have you viewed our online product catalog?</li>
+            <input type="radio" name="viewProduct" value="yes" checked id="rd-yes">
+            <label for="rd-yes">Yes</label>
+            <input type="radio" name="viewProduct" value="no" id="rd-no">
+            <label for="rd-no">No</label><br>
+
+            <li>If so, what product(s), besides the one you are ordering, might you be interested in purchasing
+                in the future? (Check all that apply.)</li>
+            <input type="checkbox" name="cau6" value="vcr" id="checkbox1">
+            <label for="checkbox1">VCR</label><br>
+            <input type="checkbox" name="cau6" value="big screen" id="checkbox2">
+            <label for="checkbox2">Big Screen TV</label><br>
+            <input type="checkbox" name="cau6" value="Audio Equipment" id="checkbox3">
+            <label for="checkbox3">Audio Equipment</label><br>
+            <input type="checkbox" name="cau6" value="Video Equipment" id="checkbox4">
+            <label for="checkbox4">Video Equipment</label><br>
+            <input type="checkbox" name="cau6" value="Camera Equipment" id="checkbox5">
+            <label for="checkbox5">Camera Equipment</label><br>
+            <input type="checkbox" name="cau6" value="Other" checked id="checkbox6">
+            <label for="checkbox6">Other</label>
+
+            <input type="text" name="cau6" value="Please List:"><br>
+            <li>Do you have any questions, comments or suggestions before proceeding to the Order Form?</li>
+            <textarea cols="40" rows="5">Your Input:</textarea><br>
+        </ol>
+        <div>
+            <input type="submit" value="Send Form">
+            <input type="reset" value="Clear Form">
+        </div>
+    </form>
+</body>
+
+</html>

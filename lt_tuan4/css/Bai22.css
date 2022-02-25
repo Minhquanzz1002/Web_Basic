@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 99%;
+    margin: 0 auto;
+}
+
+header, footer {
+    width: 100%;
+}
+
+header {
+    border-bottom: 1px solid black;
+    background-color: #666666;
+}
+
+nav, section {
+    float: left;
+    height: 600px;
+}
+
+nav {
+    width: 200px;
+    text-align: left;
+    padding-left: 20px;
+    background-color: #D6D6D6;
+}
+
+section {
+    width: 70%;
+    padding: 0 20px 0 20px;
+}
+
+footer {
+    clear: both;
+}
+/* phần nội dung header*/
+h1{
+    margin-left: 10px;
+    text-align: left;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+/* nội dung phần nav*/
+nav > h2{
+    font-size: 30px;
+}
+a{
+    font-size: 20px;
+}
+
+/* nội dung chính của trang*/
+section > p{
+    text-align: left;
+    font-size: 20px;
+    margin: 15px 0 15px 0;
+}
+section > h2{
+    text-align: left;
+    margin-bottom: 20px;
+}
+section ul{
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+    list-style: circle;
+}

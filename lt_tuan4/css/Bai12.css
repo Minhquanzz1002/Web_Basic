@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.ribbon {
+    position: fixed;
+    height: 60px;
+    font-size: 30px;
+    padding-top: 15px;
+    text-align: center;
+    inset: 0 auto auto 0;
+    background: red;
+    transform-origin: 100% 0;
+    transform: translate(-29.3%) rotate(-45deg);
+    box-shadow: 0 0 0 999px red;
+    clip-path: inset(0 -100%);
+}
+
+h1 {
+    margin: 30px;
+    font-size: 60px;
+    text-shadow: 0 0 3px #000000, 3px 0 3px #000000, 0 3px 3px #000000, -3px 0 3px #000000, 
+    0 -3px 3px #000000;;
+}

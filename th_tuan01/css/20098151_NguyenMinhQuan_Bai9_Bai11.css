@@ -1,0 +1,27 @@
+caption{
+    font-size: 20px;
+    color: #33788B;
+}
+table{
+    margin: 0 auto;
+}
+table, th, td{
+    border: 2px solid #FFB01A;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    color: #33788B;
+    background-color: #90FFFF;
+}
+td{
+    background-color: #fcfc9e;
+}
+div{
+    margin-right: 1200px;
+    margin-left: 50px;
+}
+.ten_cau{
+    margin-left: 50px;
+    color: red;
+}

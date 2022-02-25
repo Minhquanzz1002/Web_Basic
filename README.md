@@ -1,2 +1,22 @@
-# Web_Basic
-![markdown](https://images.viblo.asia/518eea86-f0bd-45c9-bf38-d5cb119e947d.png)
+# CODE MÔN HỆ THỐNG VÀ CÔNG NGHỆ WEB
+## Phân nổ thư mục
++ Thực hành tuần 1
++ Thực hành tuần 2
++ Thực hành tuần 3
++ Thực hành tuần 4
++ Thực hành tuần 5
++ Thực hành tuần 6
++ Thực hành tuần 7
++ Thực hành tuần 8
++ Thực hành tuần 9
++ Thực hành tuần 10
++ Lý thuyết tuần 1
++ Lý thuyết tuần 2
++ Lý thuyết tuần 3
++ Lý thuyết tuần 4
++ Lý thuyết tuần 5
++ Lý thuyết tuần 6
++ Lý thuyết tuần 7
++ Lý thuyết tuần 8
++ Lý thuyết tuần 9
++ Lý thuyết tuần 10

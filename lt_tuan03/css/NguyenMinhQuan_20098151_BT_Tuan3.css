@@ -1,0 +1,253 @@
+.cau1>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: thin #000099 dashed;
+}
+
+.cau1>h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 9px;
+    font-style: italic;
+    color: #CC0000;
+    text-decoration: blink;
+}
+
+.cau1>h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: #FF3399;
+}
+
+.cau1>h4 {
+    font-family: Verdana, Arial, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #FFFF00;
+}
+
+.cau1>h5 {
+    font-family: 'Courier New', Courier, mono;
+    font-size: 24px;
+    font-style: italic;
+    color: #009999;
+}
+
+.cau1>h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: lighter;
+    color: #009999;
+}
+#table_cau4{
+    border: 1px solid #993738;
+    font-family: "Trebuchet MS, Arial, Helvetica, sans-serif";
+    border-collapse: collapse;
+}
+#table_cau4>caption {
+    font-size: 20px;
+    color: #993738;
+}
+.dongchan, .dongle, .tieude, .col{
+    border: 1px solid #993738
+}
+.tieude {
+    color: white;
+    background-color: #993738;
+}
+
+.dongchan{
+    background-color: #CCCCCC;
+}
+
+.dongle{
+    background-color: white;
+}
+
+.col:last-child{
+    text-align: right;
+}
+
+.col:first-child{
+    text-align: left;
+}
+
+.tieude:first-child{
+    text-align: left;
+}
+
+#cau5 {
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/background1.jpg), url(../img/background2.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+}
+
+#cau7 {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid lightblue;
+}
+
+#cau8a, #cau8b, #cau8c, #cau8d {
+    text-align: center;
+    border-color: #85C226 #F7C200 #4493A0 #DF127B;
+}
+
+#cau8a {
+    border-style: solid;
+    border-width: 10px;
+}
+
+#cau8b {
+    border-width: 10px;
+    border-style: solid dotted groove double;
+}
+
+#cau8c {
+    border-width: 5px 10px 15px 20px;
+    border-style: solid;
+}
+
+#cau8d {
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 0px 30px 70px 20px;
+}
+
+#cau8e {
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    margin: 0px auto;
+    border-width: 4px 30px 4px 30px;
+    border-style: groove ridge dashed groove;
+    border-color: #85C226;
+    border-radius: 100px 100px 0 0;
+}
+
+#cau8f {
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    margin: 0px auto;
+    border: 5px solid #F7C200;
+    border-radius: 20px;
+}
+
+#cau8g {
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    margin: 0px auto;
+    border-width: 0px 12px 0px 12px;
+    border-style: double;
+    border-color: #FF3399;
+    border-radius: 40px 40px 60px 60px;
+}
+
+#cau8h {
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    margin: 0px auto;
+    border: 5px solid #4493A0;
+    border-radius: 20px 100px 100px 20px;
+}
+
+#cau8i {
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    margin: 0px auto;
+    border-width: 5px 30px 5px 30px;
+    background: #85C226;
+    border-style: solid;
+    border-color: #4493A0 #4493A0 #FF3399 #FF3399;
+    border-radius: 0px 120px 0px 120px;
+}
+
+#cau8j {
+    width: 200px;
+    padding: 8px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #4493A0;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    font-weight: 900;
+    font-size: 125%;
+}
+
+#cau9 {
+    width: 100%;
+    height: 400px;
+    margin: 0px auto;
+}
+
+.khung_logo1 {
+    width: 410px;
+    height: 160px;
+    border: 1px solid red;
+    margin: 15px;
+    float: left;
+    position: relative;
+}
+
+.khung_logo2 {
+    border: none;
+    width: 400px;
+    height: 150px;
+    float: left;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.khung_logo2:hover {
+    border: 1px double red;
+}
+
+#cau10 {
+    width: 1000px;
+    height: 200px;
+    position: relative;
+}
+
+#animation {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    background: #F7C200;
+    clear: both;
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+
+@keyframes scroll {
+    to {
+        left: 100%;
+        transform: rotate(360deg);
+    }
+}

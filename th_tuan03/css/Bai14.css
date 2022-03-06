@@ -1,0 +1,24 @@
+.container {
+    padding-top: 50px;
+}
+
+p {
+    width: 400px;
+    text-align: justify;
+    border-top: 5px double red;
+    border-left: 5px double red;
+    border-bottom: 5px dashed red;
+    border-right: 5px dashed red;
+    border-radius: 15px;
+    padding: 20px 0;
+    background-color: #8BBC4D;
+    transition: all 1s;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+p:hover {
+    background-color: #81C067;
+    transform: scale(1.5) rotate(360deg);
+    opacity: 0.8;
+}

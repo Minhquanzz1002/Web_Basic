@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+/*Phần header: logo và nút Sign in*/
+header {
+    background-color: #E3E7EA;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    float: left;
+}
+
+.headerleft {
+    width: 90%;
+}
+
+.headerright {
+    width: 10%;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.headerright button {
+    float: right;
+    background-color: #CCD0D3;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    height: 40px;
+    text-align: center;
+}
+/*Phần menu*/
+nav{
+    background-color: #E3E7EA;
+    padding: 10px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #E3E7EA;
+    overflow: hidden;
+}
+ul li{
+    float: left;
+    width: 25%;
+}
+ul li a{
+    text-decoration: none;
+    text-align: left;
+    color: #4D4E53;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    padding: 8px 16px;
+}
+
+/*Phần link trang*/
+section{
+    box-sizing: border-box;
+    margin: 0 30px;
+}
+section div.clearfix::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.link-page, .languages{
+    float: left;
+}
+.languages div{
+    padding-top: 13px;
+}
+.link-page{
+    width: 70%;
+}
+.languages{
+    width: 30%;
+}
+.link-page ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.link-page ul li{
+    width: auto;
+    float: left;
+}
+.link-page ul li a:not(.active){
+    text-align: left;
+    color: blue;
+}
+li a.active{
+    color: #4D4E53;
+}
+.languages button{
+    background-image: url(../img/setting_icon.png);
+    width: 34px;
+    height: 34px;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+.languages-text{
+    float: right;
+}
+
+section h1{
+    font-size: 70px;
+    color: #4D4E53;
+}
+section p{
+    font-size: 20px;
+    color: #4D4E53;
+    margin-bottom: 30px;
+}
+
+
+
+
+/*Phần table*/
+table{
+    width: 100%;
+}
+td{
+    width: 50%;
+    border: 5px solid white;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+td a{
+    background-color: #A24C4C;
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    height: 35px;
+    padding-top: 15px;
+    color: white;
+}
+td:nth-child(odd){
+    border-left: none;
+}
+td:nth-child(even){
+    border-right: none;
+}

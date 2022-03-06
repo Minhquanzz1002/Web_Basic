@@ -1,0 +1,15 @@
+h1::before {
+    display: inline-block;
+    position: relative;
+    top: 65px;
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: -65px 40px 0 0;
+    background: url(enso.svg);
+    background-size: 100%;
+    opacity: 0.6;
+    -webkit-animation: koan 36000s infinite alternate;
+    -moz-animation: koan 36000s infinite alternate;
+    animation: koan 36000s infinite alternate;
+}

@@ -1,0 +1,127 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+:root {
+    --color1: #fff;
+    --bg-color-button: #2eb3c4;
+    --bg-color-button-hover: #238693;
+}
+
+/*Phần header*/
+header {
+    background-color: #fe6a65;
+    padding: 15px;
+}
+
+header h1 {
+    color: var(--color1);
+    font-size: 40px;
+    font-family: 'Anivers Regular', monospace;
+}
+
+.header-span1 {
+    font-weight: bold;
+}
+
+.header-span2 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*Phần menu chạy cùng scroll*/
+section {
+    width: 100%;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    border-radius: 5px;
+    padding: 10px 0 10px 10px;
+    float: right;
+    background-color: #fff;
+}
+
+.menu span button {
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    background-color: var(--bg-color-button);
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--color1);
+}
+
+.menu span button:hover {
+    background-color: var(--bg-color-button-hover);
+}
+
+.menu ul {
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.menu ul li {
+    float: right;
+}
+
+.menu ul li img {
+    width: 50%;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+/*Phần nội dung*/
+.content1 {
+    margin: 15px 0 15px;
+    padding: 15px;
+    background-color: #E0F5FF;
+}
+
+section h2 {
+    padding: 0 15px 0;
+    margin-bottom: 20px;
+}
+
+.content2 {
+    padding: 10px 0;
+    margin: 15px;
+    width: 100%;
+    border-top: 1px solid #555;
+}
+
+.box-avt {
+    float: left;
+}
+
+.avt {
+    width: 30px;
+    height: auto;
+}
+
+.name-author {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+p {
+    padding: 0 40px 0;
+    margin: 20px 0;
+}

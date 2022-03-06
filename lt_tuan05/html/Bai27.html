@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/Bai27.css">
+    <title>Bài 27</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="clearfix">
+                <div class="header logoleft">
+                    <a href="#">CSS-TRICKS</a>
+                </div>
+                <div class="header logoright">
+                    <div>
+                        <img src="../img/Logo_27.png" alt="Logo" style="cursor: pointer;">
+                    </div>
+                    <div>
+                        <div class="logoright-top"><a href="#" >treehouse</a></div>
+                        <div class="logoright-bottom"><a href="#" >Land your dream job.</a></div>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#"><span>Blog</span></a></li>
+                <li><a href="#"><span>Videos</span></a></li>
+                <li><a href="#"><span>Almanac</span></a></li>
+                <li><a href="#"><span>Snippet</span></a></li>
+                <li><a href="#"><span>Forums</span></a></li>
+                <li><a href="#"><span>Jobs</span></a></li>
+                <li><a href="#"><span>Lodge</span></a></li>
+            </ul>
+            <form>
+                <input type="text">
+                <button type="submit"></button>
+            </form>
+        </nav>
+        <section>
+            <div class="box-content">
+                <div class="infomation">
+                    <div class="info avt">
+                        <img src="../img/avt.jpg" alt="">
+                    </div>
+                    <div class="info name-time">
+                        NGUYEN MINH QUAN // MARCH 1, 2022
+                    </div>
+                </div>
+                <div class="content">
+                    <h2><img src="../img/right_arrow_icon.png" alt="arrow">Motion along path in CSS</h2>
+                    <p>Everything works fine except for the sticky part of the navigation bar. For a reason unknown to me it decides to act as a non-sticky navigation bar and scroll with the content of the page.</p>
+                    <p>I'm trying to create a card with a background image changing on mouse movement on it, using a useState. The code works fine, but if I create multiple instances of the card component when I move on a card, it'll cause the state update of all the instances of the card. How can I prevent my code from doing this?</p>
+                    <p>It's because your jQuery event listeners are listening to document wide notifications. Ie All AboutCard mousemove listeners will run every time there is a mousemove event on an element with the class profileImage (which is every instance of your component).</p>
+                </div>
+            </div>
+            <br>
+            <div class="box-content">
+                <div class="infomation">
+                    <div class="info avt">
+                        <img src="../img/avt.jpg" alt="">
+                    </div>
+                    <div class="info name-time">
+                        NGUYEN MINH QUAN // MARCH 1, 2022
+                    </div>
+                </div>
+                <div class="content">
+                    <h2><img src="../img/right_arrow_icon.png" alt="arrow">Motion along path in CSS</h2>
+                    <p>Everything works fine except for the sticky part of the navigation bar. For a reason unknown to me it decides to act as a non-sticky navigation bar and scroll with the content of the page.</p>
+                    <p>I'm trying to create a card with a background image changing on mouse movement on it, using a useState. The code works fine, but if I create multiple instances of the card component when I move on a card, it'll cause the state update of all the instances of the card. How can I prevent my code from doing this?</p>
+                    <p>It's because your jQuery event listeners are listening to document wide notifications. Ie All AboutCard mousemove listeners will run every time there is a mousemove event on an element with the class profileImage (which is every instance of your component).</p>
+                </div>
+            </div>
+            <br>
+            <div class="box-content">
+                <div class="infomation">
+                    <div class="info avt">
+                        <img src="../img/avt.jpg" alt="">
+                    </div>
+                    <div class="info name-time">
+                        NGUYEN MINH QUAN // MARCH 1, 2022
+                    </div>
+                </div>
+                <div class="content">
+                    <h2><img src="../img/right_arrow_icon.png" alt="arrow">Motion along path in CSS</h2>
+                    <p>Everything works fine except for the sticky part of the navigation bar. For a reason unknown to me it decides to act as a non-sticky navigation bar and scroll with the content of the page.</p>
+                    <p>I'm trying to create a card with a background image changing on mouse movement on it, using a useState. The code works fine, but if I create multiple instances of the card component when I move on a card, it'll cause the state update of all the instances of the card. How can I prevent my code from doing this?</p>
+                    <p>It's because your jQuery event listeners are listening to document wide notifications. Ie All AboutCard mousemove listeners will run every time there is a mousemove event on an element with the class profileImage (which is every instance of your component).</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

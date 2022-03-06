@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/Bai25.css">
+    <title>bài 25</title>
+</head>
+<body>
+    <div class="container">
+        <header class="clearfix">
+            <div class="header headerleft">
+                <img src="../img/LogoMDN.png" alt="">
+            </div>
+            <div class="header headerright">
+                <button type="button">Sign in</button>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">WEB PLATFORM</a></li>
+                <li><a href="#">MOZILLA DOCS</a></li>
+                <li><a href="#">DEVELOPER TOOLS</a></li>
+                <li><a href="#">DEMOS</a></li>
+                <li><a href="#">CONNECT</a></li>
+                <li><img src="../img/search_find_icon.png" alt="" width="16%"></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="clearfix">
+                <div class="link-page">
+                    <ul>
+                        <li><a href="#">MDN &#62;</a></li>
+                        <li><a href="#">Web technology for developers &#62;</a></li>
+                        <li><a href="#">Web developer guider &#62;</a></li>
+                        <li><a href="#">CSS developer &#62;</a></li>
+                        <li><a href="#" class="active">Getting started with CSS</a></li>
+                    </ul>
+                </div>
+                <div class="languages">
+                    <div class="languages-text">
+                        LANGUAGES 
+                        <img src="../img/earth_global_icon.png" alt="" style="vertical-align: sub;">
+                        <button type="button"></button>
+                    </div>
+                </div>
+            </div>
+            <h1>Getting started with CSS</h1>
+            <p>Everything works fine except for the sticky part of the navigation bar. For a reason unknown to me it decides to act as a non-sticky navigation bar and scroll with the content of the page.</p>
+            <p>I'm trying to create a card with a background image changing on mouse movement on it, using a useState. The code works fine, but if I create multiple instances of the card component when I move on a card, it'll cause the state update of all the instances of the card. How can I prevent my code from doing this?</p>
+            <p>It's because your jQuery event listeners are listening to document wide notifications. Ie All AboutCard mousemove listeners will run every time there is a mousemove event on an element with the class profileImage (which is every instance of your component).</p>
+            <table>
+                <tr>
+                    <td><a href="#">Item</a></td>
+                    <td><a href="#">Item</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Item</a></td>
+                    <td><a href="#">Item</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Item</a></td>
+                    <td><a href="#">Item</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Item</a></td>
+                    <td><a href="#">Item</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Item</a></td>
+                    <td><a href="#">Item</a></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

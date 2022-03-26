@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        var txtCard;
+        txtCard = prompt("Nhập mã card");
+        regexp = /^\d{4}-\d{4}-\d{4}-\d{4}$/;
+        if (regexp.test(txtCard)){
+            document.write("Định dạng card là hợp lệ");
+        }else{
+            document.write("Định dạng card là không hợp lệ");
+        }
+    </script>
+    <title>Bài 14</title>
+</head>
+<body>
+    
+</body>
+</html>

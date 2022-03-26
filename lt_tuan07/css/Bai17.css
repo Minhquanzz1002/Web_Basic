@@ -1,0 +1,42 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {}
+
+caption{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 65%;
+}
+
+input[type=text] {
+    width: 400px;
+}
+span{
+    color: red;
+}
+tr{
+    height: 30px;
+}
+label {
+    margin-right: 10px;
+}
+td:nth-child(odd){
+    width: 130px;
+    text-align: right;
+}
+
+button{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    border-radius: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9</title>
+    <link rel="stylesheet" type="text/css" href="../css/Bai9.css">
+    <script type="text/javascript">
+        // for (var i = 1; i <= 12; i++) {
+        //     for(var j = 1; j <= 12; j++){
+        //         document.write(i + 'x' + j + '=' + (i*j) + '</br>');
+        //     }
+        //     document.write('</br>')
+        // }
+        var doC, doF;
+        do{
+            doF = prompt("Nhập vào độ F cần chuyển đổi");
+        }while(isNaN(doF))
+        document.write("<p>" +doF + " &#176;C tương đương với " + ((doF - 32)/1.8).toFixed(2) + " &#176;F</p>");
+        function bangcuachuong(i){
+            for(var j = 1; j <= 12; j++){
+                document.write(i + 'x' + j + '=' + (i*j) + '</br>');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>BẢNG CỬU CHƯƠNG</h1>
+    <div class="div1"><script>bangcuachuong(1)</script></div>
+    <div class="div2"><script>bangcuachuong(2)</script></div>
+    <div class="div3"><script>bangcuachuong(3)</script></div>
+    <div class="div4"><script>bangcuachuong(4)</script></div>
+    <div class="div5"><script>bangcuachuong(5)</script></div>
+    <div class="div6"><script>bangcuachuong(6)</script></div>
+    <div class="div7"><script>bangcuachuong(7)</script></div>
+    <div class="div8"><script>bangcuachuong(8)</script></div>
+    <div class="div9"><script>bangcuachuong(9)</script></div>
+    <div class="div10"><script>bangcuachuong(10)</script></div>
+    <div class="div11"><script>bangcuachuong(11)</script></div>
+    <div class="div12"><script>bangcuachuong(12)</script></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/Bai12.css">
+    <title>Bài 12</title>
+    <script type="text/javascript">
+        function changeImage() {
+            var arrImage = new Array();
+            arrImage[0] = "../img/wifi0.png";
+            arrImage[1] = "../img/wifi1.png";
+            arrImage[2] = "../img/wifi2.png";
+            arrImage[3] = "../img/wifi3.png";
+            var m = Math.round(Math.random() * 4);
+            document.images['image'].src = arrImage[m];
+            idq = setTimeout("changeImage()", 1000);
+        }
+        function stop() {
+            clearTimeout(idq);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="khung">
+            <div class="image">
+                <img id="image" src="../img/wifi0.png" alt="Cột sống wifi">
+            </div>
+            <div class="desc">
+                <span>
+                    <button onclick="changeImage()">Start</button>
+                    <button onclick="stop()">Stop</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

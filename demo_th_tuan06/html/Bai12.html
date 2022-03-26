@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 12</title>
+    <script>
+        let counter = 0;
+        let timeout;
+        let timer_on = 0;
+
+        function timedCount(){
+            let imgs = [];
+            let index = Math.floor(Math.random()*imgs.length);
+            let mydiv = document.getElementById("demo");
+            mydiv.style.backgroundImage(imgs[index]);
+        }
+
+        function startCount(){
+            if (!timer_on){
+                timer_on = 1;
+                timedCount();
+            }
+        }
+
+        function stopCount(){
+            clearTimeout(timeout);
+            timer_on = 0;
+        }
+    </script>
+</head>
+<body>
+    <div id="demo"></div>
+    <button onclick="startCount()"></button>
+</body>
+</html>
+
+
+                  <!-- laâaaâaal -->

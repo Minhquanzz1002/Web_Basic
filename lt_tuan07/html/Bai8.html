@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/Bai8.css">
-    <title>Bài 8</title>
-    <script>
-        function Dong_ho() {
-            var gio = document.getElementById("gio");
-            var phut = document.getElementById("phut");
-            var giay = document.getElementById("giay");
-            var Gio_hien_tai = new Date().getHours();
-            var Phut_hien_tai = new Date().getMinutes();
-            var Giay_hien_tai = new Date().getSeconds();
-            gio.innerHTML = Gio_hien_tai;
-            phut.innerHTML = Phut_hien_tai;
-            giay.innerHTML = Giay_hien_tai;
+    <script type="text/javascript">
+        function clock() {
+            var d = new Date();
+            var s = d.getSeconds();
+            var m = d.getMinutes();
+            var h = d.getHours();
+            var day = d.getDay();
+            var date = d.getDate();
+            var month = d.getMonth();
+            var year = d.getFullYear();
+            var days = new Array("Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy");
+            var months = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12");
+            if (s < 10){
+                s = "0" + s;
+            }
+            if (m < 10){
+                m = "0" + m;
+            }
+            if (h < 10){
+                h = "0" + h;
+            }
+            if (h > 12){
+                am_pm = "PM";
+            }else{
+                am_pm = "AM";
+            }
+            var am_pm;
+            document.getElementById("date").innerHTML = days[day];
+            document.getElementById("ddmmyy").innerHTML = date + "/" + months[month] +"/" + year;
+            document.getElementById("time").innerHTML = h +":" + m + ":" +s;
         }
-       var Dem_gio = setInterval(Dong_ho, 1000);
+        var dem_gio = setInterval(clock, 1000);
     </script>
+    <title>Bài 8</title>
 </head>
+
 <body>
-    <div id="dong_ho">
-         <h2>Thời gian bây giờ là:</h2>
-         <div id="thoi_gian">
-             <div>
-                 <span id="gio">00</span><span>Giờ</span>
-             </div>
-             <div>
-                   <span id="phut">00</span><span>Phút</span>
-             </div>
-             <div>
-                 <span id="giay">00</span><span>Giây</span>
-             </div>
-         </div>
-     </div>
+    <div class="container">
+        <div id="date">Loading...</div>
+        <div id="ddmmyy">Loading</div>
+        <div id="time">Loading...</div>
+    </div>
 </body>
+
 </html>

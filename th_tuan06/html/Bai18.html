@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/Bai18.css">
+    <script src="../js/Bai18.js" type="text/javascript"></script>
     <title>Bài 18</title>
 </head>
+
 <body>
-    
+    <div class="header_wrapper">
+        <div class="header">
+            <div class="img_logo">
+                <img src="../img/facebook.png" alt="Facebook">
+            </div>
+            <div class="login">
+                <table>
+                    <tr>
+                        <td>Email hoặc điện thoại</td>
+                        <td>Mật khẩu</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="password"></td>
+                        <td><input type="button" value="Đăng nhập" id="btnlogin"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox">Duy trì đăng nhập</td>
+                        <td><a href="#">Quên mật khẩu?</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper clearfix">
+        <div class="left">
+            <h1>Cảm ơn bạn đã ghé thăm</h1>
+            <img src="../img/friends.png" alt="">
+        </div>
+        <div class="right">
+            <form>
+                <h1>Đăng ký</h1>
+                <p>Miễn phí và sẽ luôn như vậy</p>
+                <div class="boxinput">
+                    <span class="thongbao" id="tbHoTen"></span>
+                    <input type="text" id="txtHo" placeholder="Họ" class="input1">
+                    <input type="text" id="txtTen" placeholder="Tên" class="input1">
+                </div>
+                <div class="boxinput">
+                    <span class="thongbao" id="tbEmail"></span>
+                    <input type="text" id="txtEmail" placeholder="Email đăng nhập" class="input2">
+                </div>
+                <div class="boxinput">
+                    <span class="thongbao" id="tbReEmail"></span>
+                    <input type="text" id="txtReEmail" placeholder="Nhập lại Email" class="input2">
+                </div>
+                <div class="boxinput">
+                    <span class="thongbao" id="tbMatKhau"></span>
+                    <input type="password" id="txtMatKhau" placeholder="Mật khẩu" class="input2">
+                </div>
+                <div class="boxinput">
+                    <span class="thongbao" id="tbNamSinh"></span>
+                    <input type="text" placeholder="Năm sinh" id="namsinh" class="input2">
+                </div>
+                <div class="boxinput">
+                    <button type="button" value="Đăng ký" class="input3" onclick="kiemTra()">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer_wrapper">
+        <div id="footer1">
+            English (UK) <a href="">हिन्दी</a><a href="">ਪੰਜਾਬੀ</a><a href=""> اردو</a><a href="">தமிழ்</a><a
+                href="">বাংলা</a><a href="">मराठी</a><a href="">తెలుగు</a><a href="">ગુજરાતી</a><a href="">ಕನ್ನಡ</a><a
+                href="">മലയാളം</a>
+        </div>
+        <div id="footer2">
+            <a href="#">Sign Up</a><a href="#">Log In</a><a href="#">Messenger</a><a href="#">DotNetTec</a><a
+                href="#">Mobile</a><a href="#">Find Friends</a>
+            <a href="#">Badges</a><a href="#">People</a><a href="#">Pages</a><a href="#">Places</a><a
+                href="#">Games</a><a href="#">Locations</a>
+            <a href="">Celebrities</a><a href="">Groups</a><a href="">Moments</a><a href="">About</a>
+            <a href="">Create Advert</a><a href="">Create Page</a><a href="">Developers</a>
+            <a href="">Careers</a><a href="">Privacy</a><a href="">Cookies</a><a href="">Ads</a><a href="">Terms</a><a
+                href="">Help</a>
+        </div>
+    </div>
 </body>
+
 </html>

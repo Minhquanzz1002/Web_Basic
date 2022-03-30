@@ -14,7 +14,7 @@ li {
     float: left;
 }
 
-li a, dropbtn {
+li a, .dropbtn {
     text-align: center;
     text-decoration: none;
     color: white;

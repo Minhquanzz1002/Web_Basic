@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Đăng nhập</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Owl Carousel min css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <style>
+        #er1, #er2, #er3, #er4, #er5, #er6{
+            color: red;
+            text-transform: initial;
+        }
+    </style>
+    <script>
+        function ktTenDN() {
+            var reg = /^[a-z0-9_-]{3,15}$/;
+            var t = document.getElementById("user-name").value;
+            if (reg.test(t)) {
+                document.getElementById("er1").innerHTML = "";
+                return true;
+            }
+            else {
+                document.getElementById("er1").innerHTML = "Nhập sai";
+                return false;
+            }
+        }
+        function ktMKDN() {
+            var reg = /^[a-z0-9_-]{6,18}$/;
+            var p = document.getElementById("user-password").value;
+            if (reg.test(p)) {
+                document.getElementById("er2").innerHTML = "";
+                return true;
+            }
+            else {
+                document.getElementById("er2").innerHTML = "Nhập sai";
+                return false;
+            }
+        }
+        function ktTen() {
+            var reg = /^[a-z0-9_-]{3,15}$/;
+            var t = document.getElementById("user-name").value;
+            if (reg.test(t)) {
+                document.getElementById("er5").innerHTML = "";
+                return true;
+            }
+            else {
+                document.getElementById("er5").innerHTML = "Nhập sai";
+                return false;
+            }
+        }
+        function ktMK() {
+            var reg = /^[a-z0-9_-]{6,18}$/;
+            var p = document.getElementById("user-password").value;
+            if (reg.test(p)) {
+                document.getElementById("er6").innerHTML = "";
+                return true;
+            }
+            else {
+                document.getElementById("er6").innerHTML = "Nhập sai";
+                return false;
+            }
+        }
+        function ktEmail() {
+            var reg = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+            var e = document.getElementById("user-email").value;
+            if (reg.test(e)) {
+                document.getElementById("er4").innerHTML = "";
+                return true;
+            }
+            else {
+                document.getElementById("er4").innerHTML = "Nhập sai";
+                return false;
+            }
+        }
+        function ktSDT() {
+            var reg = /[0-9]{10}/;
+            var tel = document.getElementById("user-tel").value;
+            if (reg.test(tel)) {
+                document.getElementById("er3").innerHTML = "";
+                return true;
+            }
+            else {
+                document.getElementById("er3").innerHTML = "Nhập sai";
+                return false;
+            }
+        }
+        fun
+    </script>
+</head>
+<body>
+    <!-- Body main wrapper start -->
+    <div class="wrapper">
+        <!-- Start Header Style -->
+        <header id="htc__header" class="htc__header__area header--one" style="background-color:#f098ac">
+            <!-- Start Mainmenu Area -->
+            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+                <div class="container">
+                    <div class="row">
+                        <div class="menumenu__container clearfix">
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/logo/logo-babi.png" alt="logo images"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
+                                <nav class="main__menu__nav hidden-xs hidden-sm">
+                                    <ul class="main__menu">
+                                        <li class="drop"><a href="index.html">TRANG CHỦ</a></li>
+                                        <li class="drop">
+                                            <a href="product-grid.html">BÉ TRAI</a>
+                                            <ul class="dropdown mega_dropdown">
+
+                                                <!-- Start Single Mega MEnu -->
+                                                <li>
+                                                    <a class="mega__title" href="product-grid.html">Quần áo bé trai</a>
+                                                    <ul class="mega__item">
+                                                        <li><a href="product-grid.html">Áo sơ mi </a></li>
+                                                        <li><a href="product-grid.html">Áo thun</a></li>
+                                                        <li><a href="product-grid.html">Quần kiểu </a></li>
+                                                        <li><a href="product-grid.html">Quần jeans</a></li>
+                                                        <li><a href="product-grid.html">Đồ bộ</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- End Single Mega MEnu -->
+                                                <!-- Start Single Mega MEnu -->
+                                                <li>
+                                                    <a class="mega__title" href="product-grid.html">Giày dép bé trai</a>
+                                                    <ul class="mega__item">
+
+                                                        <li><a href="product-grid.html">Giày bé trai</a></li>
+                                                        <li><a href="product-grid.html">Dép bé trai</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- End Single Mega MEnu -->
+                                                <!-- Start Single Mega MEnu -->
+                                                <li>
+                                                    <a class="mega__title" href="product-grid.html">Khác</a>
+                                                    <ul class="mega__item">
+
+                                                        <li><a href="product-grid.html">Phụ kiện bé trai</a></li>
+                                                        <li><a href="product-grid.html">Đồ chơi</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- End Single Mega MEnu -->
+                                            </ul>
+                                        </li>
+                                        <li class="drop">
+                                            <a href="product-grid.html">BÉ GÁI</a>
+                                            <ul class="dropdown mega_dropdown">
+
+                                                <!-- Start Single Mega MEnu -->
+                                                <li>
+                                                    <a class="mega__title" href="product-grid.html">Quần áo bé gái</a>
+                                                    <ul class="mega__item">
+                                                        <li><a href="product-grid.html">Váy đầm Công chúa </a></li>
+                                                        <li><a href="product-grid.html">Váy đầm bé gái</a></li>
+                                                        <li><a href="product-grid.html">Áo bé gái </a></li>
+                                                        <li><a href="product-grid.html">Quần bé gái</a></li>
+                                                        <li><a href="product-grid.html">Đồ bộ</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- End Single Mega MEnu -->
+                                                <!-- Start Single Mega MEnu -->
+                                                <li>
+                                                    <a class="mega__title" href="product-grid.html">Giày dép bé gái</a>
+                                                    <ul class="mega__item">
+
+                                                        <li><a href="product-grid.html">Giày bé gái</a></li>
+                                                        <li><a href="product-grid.html">Dép bé gái</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- End Single Mega MEnu -->
+                                                <!-- Start Single Mega MEnu -->
+                                                <li>
+                                                    <a class="mega__title" href="product-grid.html">Khác</a>
+                                                    <ul class="mega__item">
+
+                                                        <li><a href="product-grid.html">Phụ kiện bé gái</a></li>
+                                                        <li><a href="product-grid.html">Đồ chơi</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- End Single Mega MEnu -->
+                                            </ul>
+                                        </li>
+                                        <li class="drop"><a href="product-grid.html">BÉ SƠ SINH</a></li>
+                                        <li class="drop"><a href="product.html">SẢN PHẨM</a></li>
+                                    </ul>
+                                </nav>
+
+                                <div class="mobile-menu clearfix visible-xs visible-sm">
+                                    <nav id="mobile_dropdown">
+                                        <ul>
+                                            <li class="drop"><a href="index.html">TRANG CHỦ</a></li>
+                                            <li>
+                                                <a href="#">DANH MỤC</a>
+                                                <ul>
+                                                    <li><a href="product-grid.html">BÉ TRAI</a></li>
+                                                    <li><a href="product-grid.html">BÉ GÁI</a></li>
+                                                    <li><a href="product-grid.html">BÉ SƠ SINH</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="drop"><a href="product.html">SẢN PHẨM</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
+                                <div class="header__right">
+                                    <div class="header__search search search__open">
+                                        <a href="#"><i class="icon-magnifier icons"></i></a>
+                                    </div>
+                                    <div class="header__account">
+                                        <a href="login.html"><i class="icon-user icons"></i></a>
+                                    </div>
+                                    <div class="htc__shopping__cart">
+                                        <a href="cart.html"><i class="icon-handbag icons"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-area"></div>
+                </div>
+            </div>
+            <!-- End Mainmenu Area -->
+        </header>
+        <!-- End Header Area -->
+        <!-- cart-main-area start -->
+        <div class="checkout-wrap ptb--100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="checkout__inner">
+                            <div class="accordion-list">
+                                <div class="accordion">
+                                    <div class="accordion__title">
+                                        Đăng nhập
+                                    </div>
+                                    <div class="accordion__body">
+                                        <div class="accordion__body__form">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="login">
+                                                        <form action="#">
+                                                            <h5 class="checkout-method__title">Đã có tài khoản?</h5>
+                                                            <p class="checkout-method__subtitle">Vui lòng đăng nhập:</p>
+                                                            <div class="single-input">
+                                                                <label for="user-email">Tên đăng nhập</label>
+                                                                <input type="text" id="user-name" onblur="ktTenDN()">
+                                                                <span id="er1">(*)</span>
+                                                            </div>
+                                                            <div class="single-input">
+                                                                <label for="user-pass">Mật khẩu</label>
+                                                                <input type="password" id="user-password" onblur="ktMKDN()">
+                                                                <span id="er2">(*)</span>
+                                                            </div>
+                                                            <p class="require">* Bắt buộc</p>
+                                                            <a href="#">Quên mật khẩu?</a><br />
+                                                            <div class="dark-btn">
+                                                                `
+                                                                <a href="#">Đăng nhập</a>
+                                                            </div>
+                                                        </form><br />
+                                                        <h5 class="checkout-method__title">Nếu chưa có tài khoản vui lòng đăng ký.</h5>
+                                                        <div class="container">
+                                                            <div class="dark-btn">
+                                                                <a href="#" data-toggle="modal" data-target="#mymodal">Đăng ký</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal fade" id="mymodal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal">Đóng</button>
+                                                                        <h4 class="modal-title">Đăng ký</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <form class="form-horizontal">
+                                                                            <div class="form-group">
+                                                                                <div class="col-md-2">
+                                                                                    <label>Tên đăng nhập</label>
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    <input class="form-control" id="user-name" type="text" placeholder="chiton241" onblur="ktTen()" />
+                                                                                    <span id="er5">(*)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <div class="col-md-2">
+                                                                                    <label>Mật khẩu</label>
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    <input class="form-control" id="user-password" type="password" placeholder="*********" onblur="ktMK()" />
+                                                                                    <span id="er6">(*)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <div class="col-md-2">
+                                                                                    <label>Số điện thoại</label>
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    <input class="form-control" id="user-tel" type="tel" placeholder="0987654321" onblur="ktSDT()" />
+                                                                                    <span id="er3">(*)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <div class="col-md-2">
+                                                                                    <label>Email</label>
+                                                                                </div>
+                                                                                <div class="col-md-8">
+                                                                                    <input class="form-control" id="user-email" type="email" placeholder="chiton2401@gmai.com" onblur="ktEmail()    " />
+                                                                                    <span id="er4">(*)</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="dark-btn">
+                                                                                <a href="#">Đăng ký</a>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="close" data-dismiss="modal">Thoát</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cart-main-area end -->
+        <!-- Start Footer Area -->
+        <footer id="htc__footer">
+            <!-- Start Footer Widget -->
+            <div class="footer__container bg__cat--1">
+                <div class="container">
+                    <div class="row">
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer">
+                                <h2 class="title__line--2">ABOUT US</h2>
+                                <div class="ft__details">
+                                    <p>Babi chuyên bán bán quần áo trẻ em online với hàng ngàn mẫu mã baby để quý khách lựa chọn cho bé yêu của bạn.<br />Hãy đặt hàng online để được hưởng nhiều ưu đãi hơn tại siêu thị mẹ và bé Babi.<br />Chọn mua ngay các mẫu quần áo thời trang trẻ em mới nhất 2020 tại Babi.vn, hàng đẹp giá cực tốt.</p>
+                                    <div class="ft__social__link">
+                                        <ul class="social__link">
+                                            <li><a href="https://twitter.com/"><i class="icon-social-twitter icons"></i></a></li>
+
+                                            <li><a href="https://www.instagram.com/"><i class="icon-social-instagram icons"></i></a></li>
+
+                                            <li><a href="https://www.facebook.com/chiton.nguyen.71/"><i class="icon-social-facebook icons"></i></a></li>
+
+                                            <li><a href="https://www.google.com.vn/"><i class="icon-social-google icons"></i></a></li>
+
+                                            <li><a href="https://www.linkedin.com/"><i class="icon-social-linkedin icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-2 col-sm-6 col-xs-12 xmt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">information</h2>
+                                <div class="ft__inner">
+                                    <ul class="ft__list">
+                                        <li><a href="aboutus.html">About us</a></li>
+                                        <li><a href="#">Thông tin giao hàng</a></li>
+                                        <li><a href="#">Chính sách bảo mật</a></li>
+                                        <li><a href="#">Điều khoản và điều kiện</a></li>
+                                        <li><a href="#">Xuất xứ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">my account</h2>
+                                <div class="ft__inner">
+                                    <ul class="ft__list">
+                                        <li><a href="login.html">Tài khoản</a></li>
+                                        <li><a href="cart.html">Giỏ hàng</a></li>
+                                        <li><a href="login.html">Đăng nhập</a></li>
+                                        <li><a href="checkout.html">Thanh toán</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 xmt-40 smt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">NEWSLETTER </h2>
+                                <div class="ft__inner">
+                                    <div class="news__input">
+                                        <input type="text" placeholder="Your Mail*">
+                                        <div class="send__btn">
+                                            <a class="fr__btn" href="#">Send Mail</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Widget -->
+        </footer>
+        <!-- End Footer Style -->
+    </div>
+        <!-- jquery latest version -->
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap framework js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- All js plugins included in this file. -->
+        <script src="js/plugins.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- Waypoints.min.js. -->
+        <script src="js/waypoints.min.js"></script>
+        <!-- Main js file that contents all jQuery plugins activation. -->
+        <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thi cuối kỳ</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/NguyenMinhQuan.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <header class="col-xl-12 p-0 border border-dark">
+            <img src="../img/Anh.PNG" alt="" class="img-fluid w-100">
+        </header>
+        <nav class="border border-dark">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link">Đăng nhập</a></li>
+                <li class="nav-item" id="myBtn"><a class="nav-link">Mở tour mới</a></li>
+            </ul>
+        </nav>
+        <section class="border border-dark">
+            <div class="row">
+                <table class="table">
+                    <caption class="text-center" style="caption-side: top;">
+                        <h4>DANH SÁCH TOUR - DU LỊCH VIỆT NAM</h4>
+                    </caption>
+                    <thead class="text-left">
+                        <tr>
+                            <th class="pl-4">STT</th>
+                            <th>Mã Tour</th>
+                            <th>Hành trình</th>
+                            <th>Ngày khởi hành</th>
+                            <th>Thời gian</th>
+                            <th>Giá tour</th>
+                            <th>Ảnh đại diện</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <footer class="border border-dark">
+            <span class="d-block text-center">SVTH: Nguyễn Minh Quân - 20098151: 420300214506 Lớp DHKTPM16B</span>
+        </footer>
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title w-100 text-center">THÔNG TIN TOUR</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form">
+                            <div class="form-group row">
+                                <label for="" class="col-md-2 text-right">Mã tour</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="w-100 form-control" id="txtMa" value="HNI-DNG-08-2018"
+                                        placeholder="Nhập mã tour (XXX-XXX-mm-yyyy)" required>
+                                    <span class="text-danger" id="tbMaTour">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-md-2 text-right">Hành trình</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="w-100 form-control" id="txtHanhTrinh"
+                                        value="Hà Nội - Huế - Đà Nắng 5 ngày 4 đêm" placeholder="Nhập hành trình"
+                                        required>
+                                    <span class="text-danger" id="tbHanhTrinh">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-md-2 text-right">Ngày khởi hành</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="w-100 form-control" id="txtNgayKhoiHanh"
+                                        value="06/08/2022" placeholder="Nhập ngày khởi hành mm/dd/yyyy">
+                                    <span class="text-danger" id="tbNgayKhoiHanh">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-md-2 text-right">Thời gian</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="w-100 form-control" id="txtThoiGian" value="5 ngày 4 đêm"
+                                        placeholder="Nhập thời gian">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-md-2 text-right">Giá Tour</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="w-100 form-control" id="txtGiaTour" placeholder="Nhập giá tour"
+                                        value="10500000" required>
+                                    <span class="text-danger" id="tbGiaTour">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-md-2 text-right">Ảnh đại diện</label>
+                                <div class="col-md-10">
+                                    <input type="file" accept=".jpg, .gif, .png" class="w-100 form-control"
+                                        id="fileAnhDaiDien" required>
+                                    <span class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-success w-100" id="btnLuu">Lưu</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

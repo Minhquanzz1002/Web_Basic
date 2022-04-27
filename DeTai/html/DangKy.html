@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/Color.css">
+    <title>Đăng nhập</title>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row bg-dark">
+            <div class="col-md-1">
+                <a href="../html/TrangChu.html"><img src="../img/Logo/logo2.png" alt=""></a>
+            </div>
+            <nav class="navbar navbar-expand col-md-8">
+                <ul class="navbar-nav  m-auto">
+                    <li class="nav-item pf-5 pr-5 align-items-center font-weight-bold"><a href="../html/TrangChu.html"
+                            class="nav-link navbar-link">TRANG CHỦ</a></li>
+                    <li class="nav-item dropdown pf-5 pr-5 align-items-center font-weight-bold">
+                        <a href="" class="nav-link navbar-link dropdown-toggle" data-toggle="dropdown">SẢN PHẨM</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Tủ lạnh</li>
+                            <li class="dropdown-item">Bếp điện - bếp từ</li>
+                            <li class="dropdown-item">Dụng cụ nhà bếp</li>
+                            <li class="dropdown-item">Bếp ga</li>
+                            <li class="dropdown-item">Lò vi sóng</li>
+                            <li class="dropdown-item">Lò nướng</li>
+                            <li class="dropdown-item">Máy rửa chén</li>
+                            <li class="dropdown-item">Máy pha cà phê</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item pf-5 pr-5 align-items-center font-weight-bold"><a href=""
+                            class="nav-link navbar-link">LIÊN HỆ</a></li>
+                    <li class="nav-item pf-5 pr-5 align-items-center font-weight-bold"><a href=""
+                            class="nav-link navbar-link">VỀ CHÚNG TÔI</a></li>
+                </ul>
+            </nav>
+            <div class="col-md-3">
+                <div class="row h-100">
+                    <div class="col-md d-flex flex-column justify-content-around">
+                        <div>
+                            <div class="d-inline-flex">
+                                <div class="d-flex flex-column justify-content-around"><i
+                                        class="fas fa-user-circle fa-2x"></i></div>
+                                <div>
+                                    <span>Đăng nhập</span>
+                                    <span>Đăng ký</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md d-flex flex-column justify-content-around">
+                        <div class="">
+                            <div class="d-inline-flex">
+                                <div class="d-flex flex-column justify-content-around"><i
+                                        class="fas fa-cart-shopping fa-2x"></i></div>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <span>Giỏ hàng</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid bg-light pt-md-5">
+            <h2 class="w-50 mx-auto text-uppercase" style="border-bottom: 4px solid #000;"><span
+                    class="pl-3 pr-3 bg-dark text-white" style="border-radius: 10px 10px 0 0;">Đăng ký</span></h2>
+            <form action="" class="w-50 pt-5 mx-auto bg-white">
+                <div class="form-group">
+                    <label for="txtLoginName" class="font-weight-bold">Tên đăng nhập: <span
+                            class="font-weight-normal text-danger" id="lblLoginName">*</span></label>
+                    <input type="text" class="form-control" id="txtLoginName" placeholder="Nhập tên đăng nhập">
+                </div>
+                <div class="form-group">
+                    <label for="txtEmail" class="font-weight-bold">Địa chỉ Email: <span
+                            class="font-weight-normal text-danger" id="lblEmail">*</span></label>
+                    <input type="email" class="form-control" id="txtEmail" placeholder="Nhập email">
+                </div>
+                <div class="form-group">
+                    <label for="txtPassword" class="font-weight-bold">Mật khẩu: <span
+                            class="font-weight-normal text-danger" id="lblPassword">*</span></label>
+                    <input type="password" class="form-control" name="password" id="txtPassword"
+                        placeholder="Nhập mật khẩu">
+                </div>
+                <div class="form-group">
+                    <label for="txtConfirmPassword" class="font-weight-bold">Nhập lại mật khẩu: <span
+                            class="font-weight-normal text-danger" id="lblEmail">*</span></label>
+                    <input type="password" class="form-control" name="confirm_password" id="txtConfirmPassword"
+                        placeholder="Nhập lại mật khẩu">
+                </div>
+                <div class="form-group">
+                    <label for="txtName" class="font-weight-bold">Họ tên: <span class="font-weight-normal text-danger"
+                            id="lblName">*</span></label>
+                    <input type="text" class="form-control" name="name" id="txtName" placeholder="Nhập họ tên">
+                </div>
+                <div class="form-group">
+                    <label for="txtTel" class="font-weight-bold">Điện thoại: <span
+                            class="font-weight-normal text-danger" id="lblTel"></span></label>
+                    <input type="tel" class="form-control" name="name" id="txtTel" placeholder="Nhập điện thoại">
+                </div>
+                <div class="d-flex justify-content-center"><button type="button" class="btn btn-danger">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+
+        <footer class="text-muted">
+            <section class="border-bottom row p-3">
+                <div class="col-md-8 mt-3">
+                    Liên hệ với chúng tôi qua:
+                </div>
+                <div class="col-md-4">
+                    <ul class="row nav float-right">
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-2x fa-facebook"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-2x fa-instagram"></i></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-2x fa-google"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="row text-center border-bottom mt-4">
+                <div class="col">
+                    <h6 class="text-uppercase"><i class="fa fa-gem"></i>Gia dụng</h6>
+                </div>
+                <div class="col">
+                    <h6 class="text-uppercase">Sản phẩm</h6>
+                    <div class="row">
+                        <div class="col">
+                            <p><a class="text-decoration-none text-reset" href="">Tủ lạnh</a></p>
+                            <p><a class="text-decoration-none text-reset" href="">Máy rửa chén</a></p>
+                            <p><a class="text-decoration-none text-reset" href="">Máy pha cà phê</a></p>
+                            <p><a class="text-decoration-none text-reset" href="">Dụng cụ nhà bếp</a></p>
+                        </div>
+                        <div class="col">
+                            <p><a class="text-decoration-none text-reset" href="">Bếp điện - bếp từ</a></p>
+                            <p><a class="text-decoration-none text-reset" href="">Bếp ga</a></p>
+                            <p><a class="text-decoration-none text-reset" href="">Lò vi sóng</a></p>
+                            <p><a class="text-decoration-none text-reset" href="">Lò nướng</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h6 class="text-uppercase">Liên hệ</h6>
+                    <p><i class="fas fa-home"></i> 12 Nguyễn Văn Bảo, Phường 4, GV, TP.HCM</p>
+                    <p><i class="fas fa-envelope"></i> 20098151.quan@student.iuh.edu.vn</p>
+                    <p><i class="fas fa-phone"></i> 033.9424.070</p>
+                </div>
+            </section>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">&copy; 2022 Copyright</div>
+        </footer>
+    </div>
+</body>
+
+</html>

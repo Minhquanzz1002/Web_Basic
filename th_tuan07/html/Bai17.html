@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/Bai17.js"></script>
+    <title>Bài 17</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/Bai17.css">
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Bai17.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="text-center">ĐĂNG KÝ TÀI KHOẢN</h1>
+            <div class="row border-bottom m-2 p-2">
+                <label for="txtUser" class="col-md-4 text-left">Tên đăng nhập</label>
+                <div class="col-md-8">
+                    <input type="text"id="txtUser" placeholder="Nhập vào tên đăng nhập" class="form-control" required>
+                    <span id="tbUser">*</span>
+                </div>
+            </div>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="txtPass1"  class="col-md-4 text-left">Mật khẩu</label>
+                <div class="col-md-8" >
+                    <input type="password" id="txtPass1" placeholder="Nhập vào mật khẩu" class="form-control" required>
+                    <span id="tbPass">*</span>
+                </div>
+            </div>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="txtPass2" class="col-md-4 text-left">Nhập lại mật khẩu</label>
+                <div class="col-md-8" >
+                    <input type="password" id="txtPass2" placeholder="Nhập vào xác nhận mật khẩu" class="form-control" required>
+                    <span id="tbPass2">*</span>
+                </div>
+            </div>
+
+            <h3 class="text-center">THÔNG TIN CÁ NHÂN</h3>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="txtName" class="col-md-4 text-left">Họ và tên</label>
+                <div class="col-md-8" >
+                    <input type="text" id="txtName" placeholder="Nhập vào họ tên (bắt buộc nhập)" class="form-control" required>
+                    <span id="tbName">*</span>
+                </div>
+            </div>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="" class="col-md-4 text-left">Ngày sinh</label>
+                <div class="col-md-8" >
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="" class="col-md-4 text-left">Giới tính</label>
+                <div class="col-md-8" >
+                    <input type="radio" name="gender" id="male" value="Nam" checked>
+                    <label for="male" id="lblMale">Nam</label>
+                    <input type="radio" name="gender" id="female" value="Nu">
+                    <label for="female" id="lblFemale">Nữ</label>
+                </div>
+            </div>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="" class="col-md-4 text-left">Địa chỉ</label>
+                <div class="col-md-8" >
+                    <input type="text" placeholder="Nhập vào địa chỉ" class="form-control">
+                </div>
+            </div>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="txtTel" class="col-md-4">Điện thoại</label>
+                <div class="col-md-8" >
+                    <input type="tel" id="txtTel" placeholder="Nhập vào số điện thoại (10 số)" class="form-control">
+                    <span id="tbTel"></span>
+                </div>
+            </div>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="txtEmail" class="col-md-4">Email</label>
+                <div class="col-md-8" >
+                    <input type="text" id="txtEmail" placeholder="Nhập vào Email theo dạng ten@tencongty.com" class="form-control">
+                    <span id="tbEmail"></span>
+                </div>
+            </div>
+
+            <div class="row justify-content-center p-2">
+                <button type="button" onclick="check()" class="btn btn-dark">Đăng ký</button>
+                <button type="reset" class="btn btn-dark">Hủy</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

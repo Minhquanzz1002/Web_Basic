@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo/logo1.jpg">
+    <title>ĐỒ GIA DỤNG FAMILY QUÂN AND DƯƠNG</title>
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">x
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+
+    <body>
+        <div id="header">
+            <img src="../img/logo/logo1.jpg" alt="" style="height: 100%;">
+            <h1> ĐỒ GIA DỤNG CHO GIA ĐÌNH </h1>
+            <form action="">
+                <input id="myInput" type="text" placeholder="Search..">  
+                <button type="button">Tìm kiếm</button>
+            </form>
+            <ul class="menu">
+                <li>
+                    <a href="">Trang Chủ</a>
+                    <ul class="menu-child">
+                        <li>
+                            <ul class="navbar nav">
+                                <!-- <li class="navbar-item"><a class="navbar-link" href="#" id="btn1">Đăng nhập</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="#" id="btn2">Đăng ký</a></li> -->
+                                <li class="navbar-item">
+                                    <a class="navbar-link" href="#" id="btn1">Đăng nhập</a>
+                                    <a class="navbar-link" href="#" id="btn2">Đăng ký</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Khuyến Mãi</a></li>
+                <li>
+                    <a href="">Dịch Vụ</a>
+                        <ul class="menu-child">
+                            <li>
+                                <ul class="navbar nav">
+                                    <li class="navbar-item">
+                                        <a class="navbar-link" href="#" id="tb1">Thông tin địa chỉ của hàng</a>
+                                        <a class="navbar-link" href="#" id="tb2">Phản hồi ý kiến</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </li>
+                <li><a href="">Giỏ Quà</a></li>
+            </ul>
+        </div>        
+        <div class="modal fade" role="dialog" id="myModal1">
+            <div class="modal-dialog" style="margin-top: 10px ;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-left">ĐĂNG NHẬP</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal" style="margin-top: 10px ;">
+                            <label for="Name" class="control-label col-xs-3">Tên đăng nhập</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="Name" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbName">*</span>
+                            </div>
+                            <label for="MK" class="control-label col-xs-3">Mật khẩu</label>
+                            <div class="col-xs-9" style="margin-bottom: 10px;">
+                                <input type="text" id="MK" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbMK">*</span>
+                            </div>
+                            <button class="btn btn-sucess btn-group-justifird" id="Save" type="button" style="color: white; background-color: green; width: 100%;">
+                                Đăng nhập
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" role="dialog" id="myModal">
+            <div class="modal-dialog" style="margin-top: 10px ;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-left">ĐĂNG KÝ TÀI KHOẢN</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal" style="margin-top: 10px ;">
+                            <label for="Name" class="control-label col-xs-3">Tên đăng nhập</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="Name" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbName">*</span>
+                            </div>
+                            <label for="MK" class="control-label col-xs-3">Mật khẩu</label>
+                            <div class="col-xs-9" style="margin-bottom: 10px;">
+                                <input type="text" id="MK" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbMK">*</span>
+                            </div>
+                            <label for="DC" class="control-label col-xs-3">Địa chỉ</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="DC" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbDC">*</span>
+                            </div>
+                            <label for="SDT" class="control-label col-xs-3">Số điện thoại</label>
+                            <div class="col-xs-9">
+                                <input type="text" id="SDT" class="form-control">
+                                <span class="text-dange
+                                r" style="color: red;" id="tbSDT">*</span>
+                            </div>
+                            <label for="Email" class="control-label col-xs-3">Email</label>
+                            <div class="col-xs-9">
+                                <input type="email" id="Email" class="form-control">
+                                <span class="text-danger" style="color: red;" id="tbEmail">*</span>
+                            </div>
+                            <button class="btn btn-sucess btn-group-justifird" id="Save" type="button" style="color: white; background-color: green; width: 100%;">
+                                Đăng ký
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" role="dialog" id="tbb1">
+            <div class="modal-dialog" style="margin-top: 10px ;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-left">THÔNG TIN</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal" style="margin-top: 10px ;">
+                            <p>số 123 đường Dương Quảng Hàm phường 5, Thành Phố Hồ Chí Minh</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" role="dialog" id="tbb2">
+            <div class="modal-dialog" style="margin-top: 10px ;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-left">PHẢN HỒI</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" id="fname" name="fname"><br>
+                            <input type="submit" value="Submit">
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+         <div id="content">
+            <p>Tại đây chúng tôi có bán tất cả vật dụng family cho ngôi nhà của bạn</p>
+        </div>
+
+        <div id="section">
+            <div class="category">
+                <div class="dropdown">
+                    <button class="dropbtn">Danh Mục Sản Phẩm</button>
+                    <div class="dropdown-content">
+                      <a href="#">Nồi cơm điện</a>
+                      <a href="#">Bếp nấu ăn </a>
+                      <a href="#">Tủ lạnh</a>
+                      <a href="#">Máy xay sinh tố</a>
+                      <a href="#">Tủ bếp,bàn ăn</a>
+                      <a href="#">Bộ chảo và dao</a>
+                      <a href="#">Sản phẩm khác...</a>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- NỘI DUNG TRANG BÁN HÀNG -->
+            <!--    <div id="section-row">
+                        <div class="gallery"></div>
+                        <div class="gallery"></div>
+                    </div> -->
+            <!-- BACKUP ONLY -->
+            
+            <div class="section-row">
+                <div class="gallery">
+                    <img src="../img/vat dung/Nồi cơm điện Toshiba Rc-10JFM(H)VN.webp" alt="Nồi cơm điện Toshiba Rc-10JFM(H)VN">
+                    <p>Nồi cơm điện Toshiba Rc-10JFM(H)VN<br>590.000 VNĐ</p>
+                </div>
+                
+                <div class="gallery">
+                    <img src="../img/vat dung/Nồi cơm điện supor 1.5 lít CFXB40FC33VN.jpg" alt="Nồi cơm điện supor 1.5 lít CFXB40FC33VN">
+                    <p>Nồi cơm điện supor 1.5 lít CFXB40FC33VN<br> 990.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/vat dung/Bếp ga đôi Sunhouse SHB307MT.jpg" alt="Bếp ga đôi Sunhouse SHB307MT">
+                    <p>Bếp ga đôi Sunhouse SHB307MT<br> 1.490.000</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/vat dung/Bếp điện từ Perfect PF -B33 2200W.webp" alt="Bếp điện từ Perfect PF -B33 2200W">
+                    <p>Bếp điện từ Perfect PF -B33 2200W <br> 450.000đ</p>
+                </div>
+            </div>
+            <div class="section-row">
+                <div class="gallery">
+                    <img src="../img/vat dung/Tủ lạnh Funiki 147 lít FR 152CL.webp" alt="Tủ lạnh Funiki 147 lít FR 152CL">
+                    <p>Tủ lạnh Funiki 147 lít FR 152CL <br> 4.490.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/vat dung/Tủ Lạnh Multidoor 448l(RF48A4010M9).webp" alt="Tủ Lạnh Multidoor 448l(RF48A4010M9)">
+                    <p>Tủ Lạnh Multidoor 448l(RF48A4010M9) <br> 23.499.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/vat dung/Máy xoay sinh tố Philips.webp" alt="Máy xoay sinh tố Philips">
+                    <p>Máy xoay sinh tố Philips<br> 350.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/vat dung/Tủ bếp thiết kế đa dụng GHS-5990.webp" alt="Tủ bếp thiết kế đa dụng GHS-5990">
+                    <p>Tủ bếp thiết kế đa dụng GHS-5990<br> 7.000.000đ</p>
+                </div>
+            </div>
+            <div class="section-row">
+                <div class="gallery">
+                    <img src="../img/vat dung/set Bàn ăn 4 ghế Mostar.jpg" alt="set Bàn ăn 4 ghế Mostar">
+                    <p>set Bàn ăn 4 ghế Mostar <br> 1.990.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/vat dung/Kệ tivi gỗ tự nhiên hiện đại.webp" alt="Kệ tivi gỗ tự nhiên hiện đại">
+                    <p>Kệ tivi gỗ tự nhiên hiện đại<br> 6.500.000 - 7.000.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/vat dung/Bộ nồi chảo KALITE KL-339.jpg" alt="Bộ nồi chảo KALITE KL-339">
+                    <p>Bộ nồi chảo KALITE KL-339 <br> 900.000 - 1.200.000đ</p>
+                </div>
+                <div class="gallery">
+                    <img src="../img/vat dung/Bộ dao kéo nhà bếp đa năng 8 món.jpg" alt="Bộ dao kéo nhà bếp đa năng 8 món">
+                    <p>Bộ dao kéo nhà bếp đa năng 8 món<br> 149.000đ</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="left-foot"> 
+                    <h2> <b> @website bán đồ gia dụng gia đình</b></2>
+                    <h4>Thành viên thực hiện trang web</h4>
+                    <p>20097581-Hồ Minh Dương</p>
+                    <p>Nguyễn Minh Quân</p>
+                    <p>Địa chỉ :số 123 đường Dương Quảng Hàm phường 5, Thành Phố Hồ Chí Minh</p>
+                    <p>GDDKKD số 0101116542 do sở KHĐT Tp.Hồ Chí Minh cấp ngày 20/04/2022</p>
+                    <p>Email : <i> shopdogiadung@gmail.com. Điện thoại:1900 9022</i></p>
+               
+            </div>
+            <div class="right-foot">
+                <img src="../img/Logo/logo1.jpg" alt="" style="height: 60%">
+                
+            </div>
+        </div>
+    </body>
+</html>

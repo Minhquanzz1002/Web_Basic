@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Document</title>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/OnThi.js"></script>
+    <style>
+        .bg-nav {
+            background-color: #DEF0D8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-md-4">
+                <img src="../img/logo2.PNG" alt="" class="img-fluid w-100 pt-3">
+            </div>
+            <div class="col-md-8">
+                <img src="../img/logo1.PNG" alt="" class="img-fluid w-100">
+            </div>
+        </header>
+        <nav class="navbar navbar-expand bg-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tổ chức</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Đăng ký đặt chỗ</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" id="myBtn">Form đặt tour</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="row p-3">
+            <section class="col-md-9 col-lg-8">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ tên</th>
+                            <th>Điện thoại</th>
+                            <th>Ngày nhận tiệc</th>
+                            <th>Giờ nhận tiệc</th>
+                            <th>Số người</th>
+                            <th>Loại tiệc</th>
+                            <th>Loại phòng</th>
+                            <th>Thành viên</th>
+                            <th>Dịch vụ đi kèm</th>
+                            <th>Ghi chú</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+            <aside class="col-md-3 col-lg-4 bg-nav">
+                <div>
+                    <h3 class="text-danger">Đặt chỗ</h3>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action text-danger">Nhóm gia đình</a>
+                        <a href="#" class="list-group-item list-group-item-action text-danger">Tiệc sinh nhật</a>
+                        <a href="#" class="list-group-item list-group-item-action text-danger">Nhóm văn phòng</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-danger">Contact</h3>
+                    <p class="text-info">Gọi tới <span class="text-dark bg-white text-">1900 6005</span> - Để đặt chỗ và
+                        được tư vấn</p>
+                    <p class="text-info">Địa chỉ: 13 Trần Bình Trọng - Quận 1 - TPHCM</p>
+                </div>
+                <div>
+                    <h3 class="text-danger">Bài viết nổi bật</h3>
+                    <ol>
+                        <li><a href="#" class="text-decoration-none">Kinh nghiệm tổ chức sinh nhật cho bé</a></li>
+                        <li><a href="#" class="text-decoration-none">Đặc sản các miền</a></li>
+                        <li><a href="#" class="text-decoration-none">Văn hóa ẩm thực Sài Gòn</a></li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Thông tin đặt tiệc</h3>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="txtHoTen" class="font-weight-bold">Họ tên người đặt tiệc: <span
+                                    class="text-danger font-weight-normal" id="tbHoTen">*</span></label>
+                            <input type="text" class="form-control" id="txtHoTen" placeholder="Họ tên">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtDienThoai" class="font-weight-bold">Điện thoại liên lạc: <span
+                                    class="text-danger font-weight-normal" id="tbDienThoai">*</span></label>
+                            <input type="tel" class="form-control" id="txtDienThoai" placeholder="Điện thoại">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtNgayNhan" class="font-weight-bold">Ngày nhận tiệc: <span
+                                    class="text-danger font-weight-normal" id="tbNgayNhan">*</span></label>
+                            <input type="date" class="form-control" id="txtNgayNhan">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtGioNhan" class="font-weight-bold">Giờ nhận tiệc: <span
+                                    class="text-danger font-weight-normal" id="tbGioNhan">*</span></label>
+                            <input type="time" class="form-control" id="txtGioNhan">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtSoNguoi" class="font-weight-bold">Số người: <span
+                                    class="text-danger font-weight-normal" id="tbSoNguoi">*</span></label>
+                            <input type="number" class="form-control" id="txtSoNguoi">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtLoaiTiec" class="font-weight-bold">Loại tiệc: <span
+                                    class="text-danger font-weight-normal" id="tbLoaiTiec">*</span></label>
+                            <select class="form-control" id="txtLoaiTiec">
+                                <option value="Set Menu">Set Menu</option>
+                                <option value="Buffet">Buffet</option>
+                                <option value="Finger Food">Finger Food</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">Loại phòng: <span
+                                    class="text-danger font-weight-normal" id="tbLoaiPhong">*</span></label>
+                            <input type="radio" name="loaiPhong" id="chkVIP">
+                            <label for="chkVIP">VIP</label>
+                            <input type="radio" name="loaiPhong" id="chkThuong">
+                            <label for="chkThuong">Thường</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">Dịch vụ đi kèm: </label>
+                            <input type="checkbox" name="" id="txtNhanVienRieng">
+                            <label for="txtNhanVienRieng">Nhân viên phục vụ riêng</label>
+                            <input type="checkbox" name="" id="txtHoaTuoi">
+                            <label for="txtHoaTuoi">Hoa tươi</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">Thành viên: </label>
+                            <input type="checkbox" name="" id="txtThanhVien">
+                            <label for="txtThanhVien" class="text-primary font-italic">nếu bạn là thành viên của
+                                quán</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtGhiChu" class="font-weight-bold">Ghi chú: </label>
+                            <textarea name="" id="txtGhiChu" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+
+                        <button type="button" class="btn btn-success w-100" id="submit">Lưu</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <h5 class="text-danger">Hotline: 1900 6005</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

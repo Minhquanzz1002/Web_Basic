@@ -5,23 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Logo/logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/TrangChu.css">
     <link rel="stylesheet" href="../css/mdb.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <title>Trang chủ</title>
+    <!-- Bố trí layout cho trang sản phẩm -->
+    <link rel="stylesheet" href="../css/Product-Grid.css">
+    <title>Sản phẩm</title>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/mdb.min.js"></script>
-    <script src="../js/TrangChu.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
+    <!-- File javascript lưu thông tin từng sản phẩm -->
     <script src="../js/ListProduct.js"></script>
+    <!-- Load dữ liệu vào từng card sản phẩm -->
+    <script src="../js/Product-LoadData.js"></script>
+    <script src="../js/TrangChu.js"></script>
+    <style>
+        .has-search .form-control {
+            padding-left: 2.375rem;
+        }
+
+        .has-search .form-control-feedback {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            width: 2.375rem;
+            height: 2.375rem;
+            line-height: 2.375rem;
+            text-align: center;
+            color: #aaa;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-fluid px-0">
+    <div class="container-fluid">
         <header class="row" style="background-color: #3F4451;">
             <div class="col-md-1">
                 <a href="../html/TrangChu.html"><img src="../img/Logo/logo2.png" alt=""></a>
@@ -79,83 +97,146 @@
                 </div>
             </div>
         </header>
-        <marquee class="text-danger font-italic">Giảm ngay 10% cho lần đầu mua hàng. Áp dụng hết 3/5/2022</marquee>
-        <div class="container" style="background: none;">
-            <div class="row">
-                <div class="col-md-10">
-                    <div id="demo" class="carousel slide w-100 h-auto border-0" data-ride="carousel">
-
-                        <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                            <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../img/Sales/slider_1.webp" alt="" class="w-100 img-fluid">
-                            </div>
-                            <div class="carousel-item clearfix">
-                                <img src="../img/Sales/slider_2.webp" alt="" class="w-100 h-100 img-fluid">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../img/Sales/slider_3.webp" alt="" class="img-fluid w-100">
-                            </div>
-                        </div>
-
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
+        <div class="container pt-2">
+            <div>
+                <div class="row w-100 d-inline-flex justify-content-between">
+                    <ol class="breadcrumb bg-white">
+                        <li class="breadcrumb-item"><a href="../html/TrangChu.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Sản phẩm</li>
+                    </ol>
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="search" class="form-control" placeholder="Tìm kiếm">
                     </div>
                 </div>
-                <div class="col-md-2 d-flex flex-column justify-content-between pl-0">
-                    <div class="">
-                        <img src="../img/Sales/joyoung-kl35-d981-35-lit-thumb-1-600x600.jpg" alt=""
-                            class="img-fluid img-thumbnail">
-                    </div>
-                    <div class="">
-                        <img src="../img/Sales/e96c8fad7b869f7ab7d79782bf38e461.jpg_720x720q80.jpg_.webp" alt=""
-                            class="img-fluid img-thumbnail">
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-md-5">
-                <div class="col-md-12">
-                    <div class="">
-                        <h3 class="text-uppercase text-danger">Sản phẩm đang giảm giá</h3>
-                        <div class="owl-carousel owl-theme row mx-0" id="product-sales">
-                            <!-- Dữ liêu đươc đẩy vào đây bằng javascript -->
-
-                            <!-- <div class="item col px-md-0">
-                                <div class="card d-flex flex-column align-items-center m-md-2 ribbon">
-                                    <img class="card-img-top" src="../img/SanPhamSale/KangarooKG12AF1A.jpg"
-                                        alt="Card image">
-                                    <div class="card-body">
-                                        <h4 class="card-title product-name">Lò chiên không dầu Kangaroo KG12AF1A 12 lít
-                                        </h4>
-                                        <p class="text-center mb-1"><span class="price-old">5.230.000₫</span></p>
-                                        <p class="text-center text-danger price font-weight-bold m-md-0">4.270.000₫</p>
-                                    </div>
-                                    <div class="ribbon2">
-                                        <span>Giảm 37%</span>
-                                    </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div id="filter-product" class="border p-4">
+                            <h5 class="text-uppercase d-flex justify-content-between align-items-center">
+                                <span>Khoảng giá</span>
+                                <button type="button" class="btn shadow-none p-0" data-toggle="collapse"
+                                    data-target="#filter-price"><i class="fas fa-plus"></i></button>
+                            </h5>
+                            <div class="collapse" id="filter-price">
+                                <div class="my-md-1">
+                                    <label class="tick">0 - 500.000
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
                                 </div>
-                            </div> -->
-
+                                <div class="my-md-1">
+                                    <label class="tick">500.000 - 1.000.000
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">1.000.000 - 1.500.000
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">1.500.000 - 2.000.000
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">2.000.000 - 3.000.000
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">Trên 3.000.000
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <h5 class="text-uppercase d-flex justify-content-between align-items-center">
+                                <span>Thương hiệu</span>
+                                <button type="button" class="btn shadow-none p-0" data-toggle="collapse"
+                                    data-target="#filter-thuonghieu"><i class="fas fa-plus"></i></button>
+                            </h5>
+                            <div class="chkThuongHieu" id="filter-thuonghieu">
+                                <div class="my-md-1">
+                                    <label class="tick">Tất cả
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">Malloca
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">Electrolux
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">Bosch
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">Lorca
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">Brandt
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">Teka
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">Cata
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                                <div class="my-md-1">
+                                    <label class="tick">Panasonic
+                                        <input type="checkbox">
+                                        <span class="check"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-            </div>
-            <div class="row pt-md-5">
-                <div class="col-md-12">
-                    <h3 class="text-uppercase text-danger">Sản phẩm bán chạy nhất tuần qua</h3>
-                    <div class="owl-carousel owl-theme row mx-0" id="sanpham-banchay">
-                        <!-- Dữ liêu đươc đẩy vào đây bằng javascript -->
-
+                    <div class="col-9">
+                        <div id="product">
+                            <div class="row border" id="list-product"
+                                style="border-radius: 10px; padding-right: 15px; padding-top: 15px;">
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#" id=""><i
+                                                class="fa-solid fa-arrow-left"></i></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">..</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" id=""><i
+                                                class="fa-solid fa-arrow-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -257,10 +338,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        includeHTML();
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Document</title>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ThiCK.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <img src="../img/1.jpg" alt="" class="w-100">
+    </div>
+    <nav class="navbar navbar-expand">
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link">Trang chủ</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Đặt</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item" id="myBtn" data->Đặt vé</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <section class="row">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <th>STT</th>
+                    <th>Họ tên khách hàng</th>
+                    <th>Ngày đi</th>
+                    <th>Số điện thoại</th>
+                    <th>Phụ thu hành lý</th>
+                    <th>Hình thức thanh toán</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+    <footer class="text-center" style="font-size: 30px;">
+        20098151 - Nguyễn Minh Quân - DHKTPM16B
+    </footer>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Đặt vé online</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="txtHoTen" class="font-weight-bold">Họ tên khách hàng</label>
+                        <input type="text" class="form-control" id="txtHoTen" placeholder="Họ tên">
+                        <span class="text-danger font-italic" id="tbHoTen">(*)</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtNgayDi" class="font-weight-bold">Ngày đi</label>
+                        <input type="date" id="txtNgayDi" class="form-control">
+                        <span class="text-danger font-italic" id="tbNgayDi">(*)</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtSDT" class="font-weight-bold">Số điện thoại</label>
+                        <input type="number" id="txtSDT" class="form-control" placeholder="Số điện thoại">
+                        <span class="text-danger font-italic" id="tbSDT">(*)</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="kygui" class="font-weight-bold">Hành lý ký gửi</label>
+                        <select name="" id="kygui" class="form-control">
+                            <option value="15kg">15kg</option>
+                            <option value="25kg">25kg</option>
+                            <option value="35kg">35kg</option>
+                        </select>
+                        <span class="text-danger font-italic"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="dongia" class="font-weight-bold">Phụ thu hành lý</label>
+                        <input type="number" id="dongia" class="form-control" value="210000" readonly>
+                        <span class="text-danger font-italic"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="font-weight-bold">Hình thức thanh toán</label>
+                        <div class="form-check" >
+                            <div class="form-check-inline">
+                                <label for="chuyentien" class="form-check-label">
+                                    <input type="radio" name="thanhtoan" id="chuyentien" class="form-check-input">Chuyển tiền
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="tienmat" class="form-check-label">
+                                    <input type="radio" name="thanhtoan" id="tienmat" class="form-check-input">Tiền mặt
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-info" id="submit">Đặt vé</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +9,158 @@
     <title>NguyenMinhQuan</title>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/NguyenMinhQuan.js"></script>
 </head>
+
 <body>
     <div class="container-fluid">
         <header class="row">
-            <div class="col-md-4">
-                <img src="../img/skyscanner.png" alt="Logo" class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                <div class="navbar navbar-expand">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link">Airlines</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Flights</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Hotels</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Car Hire</a></li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                My Account
-                                <img src="../img/account.png" alt="" class="">
-                            </a>
-                        </li>
-                    </ul>
+            <div class="row w-100 m-0 bg-light">
+                <div class="col-6">
+                    <img src="../img/skyscanner.png" alt="" class="w-50">
+                </div>
+                <div class="col-4">
+                    <nav class="navbar navbar-expand" aria-label="menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Airlines</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Flights</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Hotels</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Car Hire</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-2">
+                    <nav class="navbar navbar-expand" aria-label="my account">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="text-decoration-none nav-link dropdown-toggle"
+                                    data-toggle="dropdown">My Account <img src="../img/account.png" alt=""
+                                        class="w-25"></a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item" id="myBtn">Member Login</a>
+                                    <a href="#" class="dropdown-item">Create your account</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p id="taikhoan" style="font-size: 10px;"></p>
                 </div>
             </div>
-            <!-- <div class="col-md-1">
+            <div class="row w-100 m-0">
+                <div class="col-12" style="background-color: #121236;">
+                    <h2 class="text-light w-100 text-center pt-5">Plan your next staycation</h2>
+                    <ul class="list-inline d-flex flex-row justify-content-center pb-5">
+                        <li class="list-inline-item bg-light rounded-circle p-3"><a href="#"
+                                class="text-decoration-none text-muted">London</a></li>
+                        <li class="list-inline-item bg-light rounded-circle p-3"><a href="#"
+                                class="text-decoration-none text-muted">Edinburgh</a></li>
+                        <li class="list-inline-item bg-light rounded-circle p-3"><a href="#"
+                                class="text-decoration-none text-muted">Manchester</a></li>
+                        <li class="list-inline-item bg-light rounded-circle p-3"><a href="#"
+                                class="text-decoration-none text-muted">Belfast</a></li>
+                        <li class="list-inline-item bg-light rounded-circle p-3"><a href="#"
+                                class="text-decoration-none text-muted">Birmingham</a></li>
+                    </ul>
+                </div>
 
-            </div> -->
+            </div>
         </header>
+        <div class="my-5">
+            <div class="row w-100 m-0">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="../img/1_rmca.jpg" alt="">
+                        <p class="text-center" style="height: 30px;">The Trafalgar St. James London, Curio Collection by Hilton</p>
+                        <p class="text-right text-danger" style="font-size: 25px;">£227 Per night</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="../img/2_rmca.jpg" alt="">
+                        <p class="text-center" style="height: 30px;">The Z Hotel Piccadilly</p>
+                        <p class="text-right text-danger" style="font-size: 25px;">£65 Per night</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="../img/3_rmca.jpg" alt="">
+                        <p class="text-center" style="height: 30px;">Radisson Blu Edwardian Hampshire Hotel, London</p>
+                        <p class="text-right text-danger" style="font-size: 25px;">£149 Per night</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
-
+            <div class="row text-light py-5" style="background-color: #121236;">
+                <div class="col-4 d-flex justify-content-center">
+                    <div>
+                        <h3 class="text-warning">Explore</h3>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Airlines</a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Flights</a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Hotels</a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Car hire</a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Travel insurance</a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Travel guides</a></p>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div>
+                        <h3 class="text-warning">Partners</h3>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Work with us </a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Advertise with us </a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Travel Insight </a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Affiliates </a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Travel APIs </a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Trip.com</a></p>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div>
+                        <h3 class="text-warning">Help </h3>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Help </a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Privacy settings </a></p>
+                        <p class="mb-2"><a href="#" class="text-decoration-none text-white">Security </a></p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted pt-5">Compare cheap flights, hotels & car hire with Skyscanner</p>
+            <p class="text-muted" style="font-size: 13px;">&copy;Student name: Nguyễn Minh Quân - Student ID: 20098151 -
+                Class name: DHKTPM16B</p>
         </footer>
     </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="text-center w-100">Sign In to Your Account</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="txtEmail" >Email Address:</label>
+                        <input type="text" id="txtEmail" class="form-control" placeholder="Enter student Email Address" value="20098151.quan@student.iuh.edu.vn">
+                        <span id="tbEmail" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPassword" >Password:</label>
+                        <input type="text" id="txtPassword" class="form-control" placeholder="Enter your Password">
+                        <span id="tbPassword" class="text-danger"></span>
+                    </div>
+                    <span><a href="#" class="nav-link w-100 text-right">Forgot your password?</a></span>
+                    <div class="form-check-inline pb-3">
+                        <label for="" class="form-check-label">
+                            <input type="checkbox" class="form-check-input">Remember Me!
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-dark w-100" id="btnSubmit">Sign In</button>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-left w-100">Student name: Nguyễn Minh Quân - Student ID: 20098151</p>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
